@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentA">
+
+    <action
+        android:id="@+id/fragment_a"
+        app:destination="@+id/fragmentA"
+        app:popUpToInclusive="false"
+        />
+    <action
+        android:id="@+id/fragment_b"
+        app:destination="@+id/fragmentB"
+        app:popUpToInclusive="false"
+        />
+    <action
+        android:id="@+id/fragment_c"
+        app:destination="@+id/fragmentC"
+        app:popUpToInclusive="false"
+        />
+    <action
+        android:id="@+id/fragment_d"
+        app:destination="@+id/fragmentD"
+        app:popUpToInclusive="false"
+        />
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.navigationcomponenthandle.FragmentA"
+        android:label="FragmentA"
+        tools:layout="@layout/fragment_a"/>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.navigationcomponenthandle.FragmentB"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.navigationcomponenthandle.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.example.navigationcomponenthandle.FragmentD"
+        android:label="fragment_d"
+        tools:layout="@layout/fragment_d" />
+</navigation>
